@@ -140,7 +140,7 @@ predData_maritl <- with(NH11, expand.grid(r_maritl = levels(r_maritl),
                                           age_p = mean(age_p, na.rm = TRUE)))
 wrkPred_maritl <- predict(wrk_mod, type = "response", newdata = predData_maritl)
 cbind(predData_maritl, wrkPred_maritl)
-# Console results f this function. Predicted value of everwrk(wrkPred_maritl)
+# Console results of this function. Predicted value of everwrk(wrkPred_maritl)
 #is given for each level of r_maritl. 
 #                            r_maritl age_p       wrkPred_maritl
 #     1 Married - spouse in household 48.10983     0.13302104
